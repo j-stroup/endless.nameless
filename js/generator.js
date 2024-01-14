@@ -1949,9 +1949,24 @@ function generateRandomHTML() {
       randomImage = '';
     }
 
+    function getRandomPageNumber() {
+      min = Math.ceil(1);
+      max = Math.floor(80);
+      return Math.floor(Math.random() * (max - min + 1) + min);
+      }
+
+    if (getRandomPageNumber() == 10) {
+      min = Math.ceil(2);
+      max = Math.floor(1080);
+      var pNumber = Math.floor(Math.random() * (max - min + 1) + min);
+      randomPage = `<a href="index.html?page${pNumber}">Page ${pNumber}</a>`;
+    } else {
+      randomPage = '';
+    }
+
     var content = markovMe();
 
-    var htmlCode = `<${randomTag} style="background:${randomColor};color:${randomColor2};" class="${randomValue}">${content}</${randomTag}>${randomImage}`;
+    var htmlCode = `<${randomTag} style="background:${randomColor};color:${randomColor2};" class="${randomValue}">${content}</${randomTag}>${randomImage}${randomPage}`;
 
     arr.push(htmlCode);
   }
