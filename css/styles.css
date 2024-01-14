@@ -3,13 +3,11 @@
 
 html,
 body {
-    background-image:
-    linear-gradient(to right top, #444 0%, #000 100%);
-    overflow: hidden;
-  background-color: "black";
-  width: 100%; height: 100%;
-  font-family: "Oswald", sans-serif;
-  z-index: -2;
+  margin: 0;
+	width: 100%;
+	height: 100vh;
+	color: #fff;
+	z-index: 0;
 }
 
 * {
@@ -23,20 +21,21 @@ body {
   }
 
   map {
-    display: inline;
+
     z-index: 2;
   }
 
 .large {
-  width: 100%;
+  position: static;
+  width: auto;
   height: 100%;
   padding-top: 20px;
 }
 
 #menuToggle
 {
-  display: block;
-  position: relative;
+
+
   top: 30px;
   left: 30px;
 
@@ -50,10 +49,10 @@ body {
 
 #menuToggle input
 {
-  display: block;
+
   width: 40px;
   height: 32px;
-  position: absolute;
+
   top: -3px;
   left: -3px;
 
@@ -70,11 +69,11 @@ body {
  */
 #menuToggle span
 {
-  display: block;
+
   width: 33px;
   height: 4px;
   margin-bottom: 5px;
-  position: relative;
+
 
   background: #cdcdcd;
   border-radius: 3px;
@@ -117,7 +116,7 @@ body {
 
 #menu
 {
-  position: absolute;
+
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
@@ -162,8 +161,9 @@ body {
 }
 
 .middle {
-  position: fixed;
-  display: grid;
+  position: static;
+  width: auto;
+
   top: 50%;
   left: 50%;
   margin-top: -35px;
@@ -171,8 +171,9 @@ body {
 }
 
 .middle_low {
-  position: fixed;
-  display: grid;
+  position: static;
+  width: auto;
+
   top: 85%;
   left: 50%;
   margin-top: -35px;
@@ -180,14 +181,16 @@ body {
 }
 
 .mid_top {
-  display: grid;
+  position: static;
+  width: auto;
   margin-top: 60px;
   justify-content: center;
   align-items: center;
 }
 
 .middle_t {
-  position: fixed;
+  position: static;
+  width: auto;
   top: 50%;
   left: 40%;
   margin-top: -35px;
@@ -195,7 +198,8 @@ body {
 }
 
 .middle_x {
-  position: fixed;
+  position: static;
+  width: auto;
   top: 50%;
   left: 40%;
   margin-top: -35px;
@@ -203,7 +207,8 @@ body {
 }
 
 .place17 {
-  position: fixed;
+  position: static;
+  width: auto;
   top: 35%;
   left: 38%;
   width: 190px;
@@ -211,8 +216,9 @@ body {
 }
 
 .door {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   bottom: 0;
   margin-left: 40%;
   margin-right: 50%;
@@ -222,8 +228,9 @@ body {
 }
 
 .bcenter {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   bottom: 0;
   margin-left: 33%;
   margin-right: 50%;
@@ -233,7 +240,8 @@ body {
 }
 .box {
   display: flex;
-  width: 100%;
+  position: static;
+  width: auto;
   height: 100%;
 }
 
@@ -253,7 +261,8 @@ body {
 
 .middle_li {
     content: block;
-    position: fixed;
+    position: static;
+    width: auto;
     top: 48%;
     left: 48%;
     width: 100px;
@@ -261,7 +270,8 @@ body {
 }
 
 .message {
-  display: block;
+  position: static;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -270,7 +280,8 @@ body {
 }
 
 .message_l {
-  position: fixed;
+  position: static;
+  width: auto;
   top: 20%;
   left: 27%;
   text-align: center;
@@ -278,7 +289,7 @@ body {
 
 .pianobg {
   content: block;
-  position: fixed;
+
   top: 52%;
   left: 33%;
   width: 550px;
@@ -290,7 +301,7 @@ h2 {
   font-family: "Open Sans";
   color: rgba(0, 0, 0, 0.7);
   font-size: 30px;
-  text-decoration: none; display: block;
+  text-decoration: none;
   text-align: center;
   z-index: 1;
 }
@@ -299,7 +310,7 @@ h3 {
   font-family: "Open Sans";
   color: rgba(0, 0, 0, 0.7);
   font-size: 25px;
-  text-decoration: none; display: block;
+  text-decoration: none;
   text-align: center;
   margin-top: 50px;
 }
@@ -308,32 +319,32 @@ a {
   font-family: "Open Sans";
   color: rgba(0, 0, 0, 0.7);
   font-size: 24px;
-  text-decoration: none; display: block;
+  text-decoration: none;
   text-align: center;
   z-index: 1;
 }
 
 .columnL {
-  position: fixed;
-  display: inline-block;
+  position: static;
+  width: auto;
   left: 0%;
   width: 50%;
   height: 100%;
 }
 
 .columnR {
-  position: fixed;
-  display: inline-block;
+  position: static;
+  width: auto;
   left: 50%;
   width: 50%;
   height: 100%;
 }
 
 #footer {
-  display: block;
-  position: fixed;
+
+
   bottom: 0;
-  width: 100%;
+
   text-align: center;
   background-color: darkgray;
   opacity: 0.4;
@@ -345,7 +356,7 @@ a {
 .a {
   margin: 0;
   padding: 0;
-  width: 100%;
+
   height: 100%;
   opacity: 0.0;
   z-index: 3;
@@ -357,13 +368,14 @@ a {
 }
 
 .cube {
-	position: relative;
+	position: static;
+  width: auto;
 	width: 200px;
 	transform-style: preserve-3d;
 }
 
 .cube div {
-	position: absolute;
+
 	width: 200px;
 	height: 200px;
 }
@@ -392,7 +404,7 @@ a {
 }
 
 .container {
-  width: 100%;
+
   height: 100%;
 }
 
@@ -400,7 +412,7 @@ a {
 .gallery-wrap {
   display: flex;
   flex-direction: row;
-  width: 100%;
+
   height: 100%;
   z-index: 0;
 }
@@ -431,30 +443,6 @@ a {
     flex: 7;
 }
 
-
-.item-1 {
-  background-image: url('img/bg6.jpg');
-}
-
-.item-2 {
-  background-image: url('img/bg21.jpg');
-}
-
-.item-3 {
-  background-image: url('img/bg1044.jpg');
-}
-
-.item-4 {
-  background-image: url('img/bg105.jpg')
-}
-
-.item-5 {
-  background-image: url('img/bg104.jpg')
-}
-
-.item-6 {
-  background-image: url('img/bg788.jpg')
-}
 
 input[type="checkbox"] {
 }
@@ -492,27 +480,6 @@ input[type="checkbox"]:checked ~ .check:after {
     content: '';
 }
 
-.check:before {
-    background-image: url('img/bg20.jpg');
-    background-size: cover;
-    background-repeat: no-repeat center center fixed;
-    transition: background 0.5s ease-in;
-}
-
-.check {
-    background-image: url('img/bg20.jpg');
-    background-size: cover;
-    background-repeat: no-repeat center center fixed;
-    transition: background 0.5s ease-in;
-}
-
-.check:after {
-    background-image: url('img/bg20-n2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat center center fixed;
-    transition: background 0.5s ease-in;
-}
-
 
 input[type=text], input[type=date] {
   border: 1px solid gray;
@@ -547,21 +514,21 @@ input[type=button], input[type=submit], input[type=reset] {
 @keyframes rotateWordsSecond {
     0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
     10% { opacity: 0.3; width: 0px; }
-	20% { opacity: 1; width: 100%; }
-    27% { opacity: 0; width: 100%; }
+	20% { opacity: 1;  }
+    27% { opacity: 0;  }
     100% { opacity: 0; }
 }
 
 
 .w_container {
-  position: absolute;
+
   transform: translate(-50%, -50%);
   top: 50%;
 }
 
 .glitch {
   color: rgb(142, 255, 0);
-  position: relative;
+
   font-size: 8vw;
   // margin: 30px 90px;
   animation: glitch 5s 5s infinite;
@@ -569,7 +536,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .glitch {
   color: rgb(142, 255, 0);
-  position: relative;
+
   font-size: 6vw;
   // margin: 30px 90px;
   animation: glitch 5s 5s infinite;
@@ -577,7 +544,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .glitch::before {
   content: attr(data-text);
-  position: absolute;
+
   left: -2px;
   text-shadow: -4px 0 magenta;
   overflow: hidden;
@@ -587,7 +554,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .glitch::after {
   content: attr(data-text);
-  position: absolute;
+
   left: 2px;
   text-shadow: -4px 0 lightgreen;
   overflow: hidden;
@@ -634,8 +601,8 @@ input[type=button], input[type=submit], input[type=reset] {
 
 .scanlines::before {
   content: "";
-  position: absolute;
-  width: 100%;
+
+
   height: 100%;
   top: 0;
   left: 0;
@@ -664,7 +631,7 @@ input[type=button], input[type=submit], input[type=reset] {
   @extend .glitch;
   text-shadow: 0 0 1000px rgb(223, 191, 191);
   color: transparent;
-  position: absolute;
+
   top: 0;
 }
 
@@ -679,8 +646,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #br {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   bottom: 0;
   right: 0;
   width: 20px;
@@ -688,8 +656,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #brp {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   opacity: 0.6;
   bottom: 0;
   right: 0;
@@ -698,8 +667,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #blp {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   opacity: 0.6;
   bottom: 0;
   left: 0;
@@ -708,8 +678,9 @@ input[type=button], input[type=submit], input[type=reset] {
 }
 
 #bl {
-  display: block;
-  position: fixed;
+  position: static;
+  width: auto;
+
   opacity: 0.9;
   bottom: 0;
   left: 0;
@@ -718,14 +689,15 @@ input[type=button], input[type=submit], input[type=reset] {
   z-index: 5;
 }
 #br_text {
-  position: fixed;
+  position: static;
+  width: auto;
   bottom: 0;
   right: 0;
 }
 
 #bc {
-  display: block;
-  position: fixed;
+
+
   bottom: 200;
   right: 60%;
   width: 150px;
@@ -735,7 +707,7 @@ input[type=button], input[type=submit], input[type=reset] {
 #bc_text {
   font-family: Courier;
   color: #232424;
-  position: fixed;
+
   top: 85%;
   right: 38%;
 }
@@ -756,7 +728,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
   .message {
-    display: block;
+
     margin-left: auto;
     margin-right: auto;
     width: 93%;
@@ -765,7 +737,7 @@ input[type=button], input[type=submit], input[type=reset] {
   }
 
   .middle {
-    position: fixed;
+
     top: 40%;
     left: 7%;
     margin-top: 40px;
@@ -777,7 +749,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: "Open Sans";
     color: rgba(0, 0, 0, 0.7);
     font-size: 30px;
-    text-decoration: none; display: block;
+    text-decoration: none;
     text-align: center;
     z-index: 1;
   }
@@ -786,7 +758,7 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: "Open Sans";
     color: rgba(0, 0, 0, 0.7);
     font-size: 33px;
-    text-decoration: none; display: block;
+    text-decoration: none;
     text-align: center;
     margin-top: 15%;
   }
@@ -795,15 +767,15 @@ input[type=button], input[type=submit], input[type=reset] {
     font-family: "Open Sans";
     color: rgba(0, 0, 0, 0.7);
     font-size: 24px;
-    text-decoration: none; display: block;
+    text-decoration: none;
     text-align: center;
     z-index: 1;
   }
 
    #menuToggle
   {
-    display: block;
-    position: relative;
+
+
     top: 30px;
     left: 30px;
 
@@ -816,10 +788,10 @@ input[type=button], input[type=submit], input[type=reset] {
 
   #menuToggle input
   {
-    display: block;
+
     width: 75px;
     height: 65px;
-    position: absolute;
+
     top: -15px;
     left: -15px;
 
@@ -833,11 +805,11 @@ input[type=button], input[type=submit], input[type=reset] {
 
   #menuToggle span
   {
-    display: block;
+
     width: 55px;
     height: 8px;
     margin-bottom: 13px;
-    position: relative;
+
 
     background: #cdcdcd;
     border-radius: 5px;
@@ -880,7 +852,7 @@ input[type=button], input[type=submit], input[type=reset] {
 
   #menu
   {
-    position: absolute;
+
     width: 80%;
     margin: -100px 0 0 -50px;
     padding: 50px;
@@ -929,7 +901,7 @@ input[type=button], input[type=submit], input[type=reset] {
     }
 
   span {
-    display: block;
+
     border: 2px;
     border-radius: 2px;
     color: white;
