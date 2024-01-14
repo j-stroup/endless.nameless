@@ -1750,7 +1750,35 @@ Since we are always located wherever we are that's trivially true, everyone is l
 as everyone is located at the place they call "here".
 According to the block universe view, time or temporal relations of "earlier than" and "later than" exist.
 These relations hold regardless of where anyone is located.
+周六，支持者在台北庆祝赖清德胜选，这是民进党连续第三次赢下总统大选。
 
+新闻分析
+中国未能左右台湾大选，接下来会发生什么
+DAMIEN CAVE 11:25
+主张台湾独立身份认同的民进党连续第三次赢得总统任期，这是台湾对北京愈发强硬姿态的自发性反抗。习近平不得不面对统一大业停滞不前的现实，预计北京将继续对台施压。
+
+台湾大选：民进党力拼继续执政，台海问题成焦点
+储百亮, AMY CHANG CHIEN 13:23
+在执政八年后，力争第三任期的民进党需要说服台湾选民，其既能应对房价上涨等民生问题，也能保证新一届政府在台海问题上保持审慎立场，能够承担护卫台湾安全的职责。
+
+为何很多台裔美国人愿意不远万里返台投票
+AMY QIN 15:26
+由于不能邮寄选票，每隔四年，总有数以千计的台裔美国人飞越太平洋返乡投票。随着中国加大对台军事施压力度，对于很多侨民来说，回去投票有了更多的紧迫性。
+
+中美科技战加剧，微软亚洲研究院会撤离中国吗
+KAREN WEISE, CADE METZ, DAVID McCABE
+北京一家购物中心外的屏幕上正在播放微软联合创始人比尔·盖茨去年6月会见习近平主席的新闻画面。
+美国官员质疑微软在中国运营的先进技术研究院可能存在国家安全隐忧。微软高层正在讨论该研究院将何去何从，并表示已限制中国的研究者从事政治敏感的工作。
+
+中美芯片之战的新战线：RISC-V
+DON CLARK, ANA SWANSON
+
+RISC-V是一套告诉芯片如何执行计算任务的基本指令，已成为中国公司和政府机构发展芯片技术的核心工具。美国国会正就此展开讨论，考虑是否对该技术施加限制。
+
+美国及盟国对也门胡塞武装目标发动打击
+ERIC SCHMITT, HELENE COOPER
+周四，也门萨那。刚被招募入伍的胡塞武装分子。
+美国领导的空袭和海上打击是对胡塞武装去年11月以来持续袭击红海商船的回应。拜登政府强调打击是为了削弱其袭击红海目标的能力，力图避免进一步升级地区局势。
 Bearing this in mind, it is possible to see how to make sense of the idea of past and future. Just as on this
 model "now" picks out whatever time I happen to be located at, "past" picks out any time or events at
 those times that are earlier than my location, and "future" picks out any times or events that are later
@@ -1878,6 +1906,7 @@ Verification
     word = newWord;
     if (!word || !markovChain.hasOwnProperty(word)) word = words[Math.floor(Math.random() * words.length)]
   }
+  result[0].toUpperCase();
   return result;
 }
 
@@ -1893,28 +1922,29 @@ function random_bg_color() {
 function generateRandomHTML() {
   var arr = [];
   for (let step = 0; step <= 25; step++) {
-    const tags = ['div', 'p', 'h1', 'h3', 'h5', 'span'];
-    const attValues = ['large', 'plain', 'middle', 'box', 'br_text', 'glow', 'message', 'pianobg', 'middle_li', 'cube'];
-    const color = ['#ffffff', '#006400', '#000333', '', '#FFFACD	', '#000000', '#222222', '#555555', '#9400D3', '#2F4F4F', '#800000', '#00FF00	', 'tty777', '#0000FF	', '#ADD8E6', '#0000ff', '#008000', '#c0c0c0', '#8000080', 'ffff00'];
-    const color2 = ['#ffffff', '#3fd9kk', '#010333', '', '', '#ef6cce', '#000060', '#222222', '#555555', '#800000', '#00ss66', 'tty777', '#b990n', '#ow3322', '#0000ff', '#008000', '#c0c0c0', '#8000080', 'ffff00'];
-    const image = ['001.webp', '002.webp','003.webp','004.webp','005.webp','006.webp','007.webp','008.webp','009.webp','010.webp','011.webp','012.webp',
-    '013.webp','014.webp','015.webp','016.webp','017.webp','018.webp','019.webp','020.webp','021.webp','022.webp','023.webp', '024.webp', '025.webp'];
+    const tags = ['div', 'p', 'h1', 'h3', 'h2', 'span'];
+    const attValues = ['large', 'plain', 'middle', 'box', 'br_text', 'glow', 'message', 'pianobg', 'middle_li', 'cube', 'columnR', 'item', 'place17', 'middle_x', 'door'];
+    const color = ['#ffffff', '#006400', '#000333', '', '#FFFACD	', '#000000', '#222222', '#555555', '#9400D3', '#2F4F4F', '#800000', '#00FF00	', '#0000FF	', '#ADD8E6', '#0000ff', '#008000', '#c0c0c0', '#8000080', 'ffff00'];
+    const color2 = ['#ffffff', '#010333', '', '', '#000060', '#222222', '#555555', '#800000', '#00ss66', '#0000ff', '#008000', '#c0c0c0', '#8000080', 'ffff00'];
 
 
     var randomTag = tags[Math.floor(Math.random() * tags.length)];
     var randomValue = attValues[Math.floor(Math.random() * attValues.length)];
     var randomColor = color[Math.floor(Math.random() * color.length)];
     var randomColor2 = color2[Math.floor(Math.random() * color2.length)];
-    var randomImage = image[Math.floor(Math.random() * image.length)];
 
     function getRandomIntInclusive() {
       min = Math.ceil(1);
-      max = Math.floor(35);
+      max = Math.floor(22);
       return Math.floor(Math.random() * (max - min + 1) + min);
       }
 
     if (getRandomIntInclusive() == 10) {
-      randomImage = `<img src="img/${randomImage}">`;
+      min = Math.ceil(100);
+      max = Math.floor(480);
+      var x = Math.floor(Math.random() * (max - min + 1) + min);
+      var y = Math.floor(Math.random() * (max - min + 1) + min);
+      randomImage = `<img src="https://random.imagecdn.app/${x}/${y}">`;
     } else {
       randomImage = '';
     }
