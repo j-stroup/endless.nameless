@@ -1889,7 +1889,7 @@ Verification
       markovChain[word] = []
       }
     if (textArr[i + 1]) {
-      markovChain[word].push(textArr[i + 1].toLowerCase().replace(/[\W_]/, ""));
+      markovChain[word].push(textArr[i + 1].replace(/[\W_]/, ""));
     }
   }
   const words = Object.keys(markovChain)
@@ -1897,7 +1897,7 @@ Verification
   let result = ''
   function getRandomIntInclusive() {
     min = Math.ceil(1);
-    max = Math.floor(60);
+    max = Math.floor(100);
     return Math.floor(Math.random() * (max - min + 1) + min);
     }
   for (let i = 0; i < getRandomIntInclusive(); i++ ) {
@@ -1951,7 +1951,7 @@ function generateRandomHTML() {
 
     function getRandomPageNumber() {
       min = Math.ceil(1);
-      max = Math.floor(80);
+      max = Math.floor(100);
       return Math.floor(Math.random() * (max - min + 1) + min);
       }
 
